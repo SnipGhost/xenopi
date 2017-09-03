@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
         when "master"
           host.vm.network "forwarded_port", guest: 80, host: 8080
         when "database"
-          host.vm.network "forwarded_port", guest: 80, host: 8081
+          host.vm.network "forwarded_port", guest: 8080, host: 8081
       end
       host.vm.provision "shell", path: "#{type}.sh"
 

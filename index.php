@@ -14,7 +14,7 @@
                 </h3>
 
                 <h3 style="text-align: right; margin-top: 20px;">
-                        <?php echo $_SERVER['SERVER_SOFTWARE']; ?>
+                        on <?php echo gethostname(); ?>
                 </h3>
 
                 <br>
