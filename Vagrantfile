@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "precise64"  
+  config.vm.box = "hashicorp/precise64"  
 
   def create_node(config, hostname, ip, type = "slave")
     config.vm.define hostname do |host|
